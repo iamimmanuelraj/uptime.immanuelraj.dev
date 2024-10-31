@@ -4,17 +4,19 @@
     "url": "https://immanuelraj.dev",
     "icon": "https://icons.duckduckgo.com/ip3/immanuelraj.dev.ico",
     "slug": "portfolio",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 648,
-    "timeDay": 1542,
-    "timeWeek": 699,
-    "timeMonth": 648,
-    "timeYear": 648,
-    "dailyMinutesDown": {}
+    "time": 1107,
+    "timeDay": 4039,
+    "timeWeek": 1584,
+    "timeMonth": 1107,
+    "timeYear": 1107,
+    "dailyMinutesDown": {
+      "2024-10-31": 0
+    }
   }
 ]
