@@ -5,16 +5,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/immanuelraj.dev.ico",
     "slug": "portfolio",
     "status": "up",
-    "uptime": "99.58%",
+    "uptime": "99.59%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.51%",
-    "uptimeYear": "99.58%",
-    "time": 1165,
-    "timeDay": 341,
-    "timeWeek": 542,
-    "timeMonth": 1260,
-    "timeYear": 1165,
+    "uptimeYear": "99.59%",
+    "time": 1147,
+    "timeDay": 399,
+    "timeWeek": 526,
+    "timeMonth": 1258,
+    "timeYear": 1147,
     "dailyMinutesDown": {
       "2024-11-07": 214
     }
