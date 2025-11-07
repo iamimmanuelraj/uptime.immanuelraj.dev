@@ -5,16 +5,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/immanuelraj.dev.ico",
     "slug": "portfolio",
     "status": "up",
-    "uptime": "98.91%",
+    "uptime": "98.92%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "98.86%",
     "time": 715,
-    "timeDay": 834,
-    "timeWeek": 671,
-    "timeMonth": 753,
-    "timeYear": 702,
+    "timeDay": 845,
+    "timeWeek": 712,
+    "timeMonth": 763,
+    "timeYear": 703,
     "dailyMinutesDown": {
       "2025-09-10": 23,
       "2025-08-28": 16,
@@ -22,8 +22,7 @@
       "2024-12-15": 1440,
       "2024-12-14": 1440,
       "2024-12-13": 1440,
-      "2024-12-12": 255,
-      "2024-11-07": 214
+      "2024-12-12": 255
     }
   },
   {
@@ -37,11 +36,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 224,
-    "timeDay": 370,
-    "timeWeek": 233,
-    "timeMonth": 220,
-    "timeYear": 224,
+    "time": 225,
+    "timeDay": 318,
+    "timeWeek": 239,
+    "timeMonth": 225,
+    "timeYear": 225,
     "dailyMinutesDown": {}
   }
 ]
