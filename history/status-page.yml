@@ -1,7 +1,7 @@
 url: https://status.immanuelraj.dev
-status: up
-code: 200
-responseTime: 107
-lastUpdated: 2025-11-17T23:00:42.402Z
+status: down
+code: 500
+responseTime: 153
+lastUpdated: 2025-11-18T11:37:53.836Z
 startTime: 2025-05-26T16:37:19.911Z
 generator: Upptime <https://github.com/upptime/upptime>
