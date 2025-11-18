@@ -30,19 +30,19 @@
     "url": "https://status.immanuelraj.dev",
     "icon": "https://icons.duckduckgo.com/ip3/status.immanuelraj.dev.ico",
     "slug": "status-page",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.59%",
+    "uptimeWeek": "99.94%",
+    "uptimeMonth": "99.99%",
     "uptimeYear": "100.00%",
     "time": 224,
-    "timeDay": 130,
-    "timeWeek": 219,
-    "timeMonth": 220,
+    "timeDay": 175,
+    "timeWeek": 224,
+    "timeMonth": 222,
     "timeYear": 224,
     "dailyMinutesDown": {
-      "2025-11-18": 0
+      "2025-11-18": 6
     }
   }
 ]
