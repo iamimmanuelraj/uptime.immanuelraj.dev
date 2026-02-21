@@ -1,7 +1,7 @@
 # Change these first
 owner: iamimmanuelraj # Your GitHub organization or username, where this repository lives
 repo: uptime.immanuelraj.dev # The name of this repository
-user-agent: uptime.immanuelraj.dev # Recommended: use your GitHub username for API requests
+user-agent: uptime-immanuelraj-dev # Recommended: use your GitHub username for API requests
 
 sites:
   - name: Portfolio
