@@ -6,11 +6,11 @@ user-agent: uptime-immanuelraj-dev # Recommended: use your GitHub username for A
 sites:
   - name: Portfolio
     url: https://immanuelraj.dev
-    icon: https://immanuelraj.dev/favicon.ico # Custom icon for this site on the status page
-    expectedStatusCodes: # HTTP status codes that count as "up" (default: 2xx)
-      - 200
-    maxResponseTime: 3000 # Milliseconds before marked as "degraded" (default: 30000)
-    slug: portfolio # URL-friendly identifier (default: auto-generated from name)
+    # icon: https://immanuelraj.dev/favicon.ico # Custom icon for this site on the status page
+    # expectedStatusCodes: # HTTP status codes that count as "up" (default: 2xx)
+    #   - 200
+    # maxResponseTime: 3000 # Milliseconds before marked as "degraded" (default: 30000)
+    # slug: portfolio # URL-friendly identifier (default: auto-generated from name)
     # type: globalping # Use Globalping platform to run checks from around the world
     # location: World # Location to run the check from. Default: "World"
     #   # Supports: continents, countries, cities, ASNs, ISPs, cloud regions
@@ -20,11 +20,11 @@ sites:
     # ipv6: true # Set true to test IPv6 connectivity
   - name: Status Page
     url: https://status.immanuelraj.dev
-    icon: https://status.immanuelraj.dev/favicon.ico
-    expectedStatusCodes:
-      - 200
-    maxResponseTime: 3000
-    slug: status-page
+    # icon: https://status.immanuelraj.dev/favicon.ico
+    # expectedStatusCodes:
+    #   - 200
+    # maxResponseTime: 3000
+    # slug: status-page
     # type: globalping # Use Globalping platform to run checks from around the world
     # location: World # Location to run the check from. Default: "World"
     # ipv6: true # Set true to test IPv6 connectivity
