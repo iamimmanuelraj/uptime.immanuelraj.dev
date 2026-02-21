@@ -6,8 +6,18 @@ user-agent: uptime-immanuelraj-dev # The user agent to use when making requests 
 sites:
   - name: Portfolio
     url: https://immanuelraj.dev
+    icon: https://immanuelraj.dev/favicon.ico # Custom icon for this site on the status page
+    expectedStatusCodes: # HTTP status codes that count as "up" (default: 2xx)
+      - 200
+    maxResponseTime: 3000 # Milliseconds before marked as "degraded" (default: 30000)
+    slug: portfolio # URL-friendly identifier (default: auto-generated from name)
   - name: Status Page
     url: https://status.immanuelraj.dev
+    icon: https://status.immanuelraj.dev/favicon.ico
+    expectedStatusCodes: # HTTP status codes that count as "up" (default: 2xx)
+      - 200
+    maxResponseTime: 3000 # Milliseconds before marked as "degraded" (default: 30000)
+    slug: portfolio # URL-friendly identifier (default: auto-generated from name)
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
