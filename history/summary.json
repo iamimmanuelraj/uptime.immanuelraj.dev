@@ -2,9 +2,9 @@
   {
     "name": "Portfolio",
     "url": "https://immanuelraj.dev",
-    "icon": "https://icons.duckduckgo.com/ip3/immanuelraj.dev.ico",
+    "icon": "https://immanuelraj.dev/favicon.ico",
     "slug": "portfolio",
-    "status": "up",
+    "status": "down",
     "uptime": "99.14%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -24,9 +24,9 @@
   {
     "name": "Status Page",
     "url": "https://status.immanuelraj.dev",
-    "icon": "https://icons.duckduckgo.com/ip3/status.immanuelraj.dev.ico",
+    "icon": "https://status.immanuelraj.dev/favicon.ico",
     "slug": "status-page",
-    "status": "up",
+    "status": "down",
     "uptime": "99.97%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
