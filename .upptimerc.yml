@@ -31,7 +31,7 @@ sites:
     #   # Combine with +: "amazon+germany", "comcast+california"
     # check: icmp-ping # Alternative check types: icmp-ping, tcp-ping (default: HTTP)
     # port: 443 # Required when check: tcp-ping
-    ipv6: true # Set true to test IPv6 connectivity
+    # ipv6: true # Set true to test IPv6 connectivity
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
