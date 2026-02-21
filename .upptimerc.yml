@@ -1,52 +1,40 @@
-# Change these first
-owner: iamimmanuelraj # Your GitHub organization or username, where this repository lives
-repo: uptime.immanuelraj.dev # The name of this repository
-user-agent: uptime-immanuelraj-dev # The user agent to use when making requests to your sites
-
+---
+owner: iamimmanuelraj
+repo: uptime.immanuelraj.dev
+user-agent: uptime-immanuelraj-dev
 sites:
   - name: Portfolio
     url: https://immanuelraj.dev
-    icon: https://immanuelraj.dev/favicon.ico # Custom icon for this site on the status page
-    expectedStatusCodes: # HTTP status codes that count as "up" (default: 2xx)
+    icon: https://immanuelraj.dev/favicon.ico
+    expectedStatusCodes:
       - 200
-    maxResponseTime: 3000 # Milliseconds before marked as "degraded" (default: 30000)
-    slug: portfolio # URL-friendly identifier (default: auto-generated from name)
-    type: globalping # Use Globalping platform to run checks from around the world
-    location: World # Location to run the check from. Default: "World"
-    #   # Supports: continents, countries, cities, ASNs, ISPs, cloud regions
-    #   # Combine with +: "amazon+germany", "comcast+california"
-    # check: icmp-ping # Alternative check types: icmp-ping, tcp-ping (default: HTTP)
-    # port: 443 # Required when check: tcp-ping
-    ipv6: true # Set true to test IPv6 connectivity
+    maxResponseTime: 3000
+    slug: portfolio
+    type: globalping
+    location: World
+    ipv6: true
   - name: Status Page
     url: https://status.immanuelraj.dev
     icon: https://status.immanuelraj.dev/favicon.ico
-    expectedStatusCodes: # HTTP status codes that count as "up" (default: 2xx)
+    expectedStatusCodes:
       - 200
-    maxResponseTime: 3000 # Milliseconds before marked as "degraded" (default: 30000)
-    slug: portfolio # URL-friendly identifier (default: auto-generated from name)
-    type: globalping # Use Globalping platform to run checks from around the world
-    location: World # Location to run the check from. Default: "World"
-    #   # Supports: continents, countries, cities, ASNs, ISPs, cloud regions
-    #   # Combine with +: "amazon+germany", "comcast+california"
-    # check: icmp-ping # Alternative check types: icmp-ping, tcp-ping (default: HTTP)
-    # port: 443 # Required when check: tcp-ping
-    # ipv6: true # Set true to test IPv6 connectivity
-
+    maxResponseTime: 3000
+    slug: portfolio
+    type: globalping
+    location: World
+    ipv6: true
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: uptime.immanuelraj.dev
-  # baseUrl: /your-repo-name
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Up Time Check
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  introTitle: "**Upptime** is the open-source uptime monitor and status page,
+    powered entirely by GitHub."
+  introMessage: This is a sample status page which uses **real-time** data from
+    our [GitHub repository](https://github.com/upptime/upptime). No server
+    required — just GitHub Actions, Issues, and Pages. [**Get your own for
+    free**](https://github.com/upptime/upptime)
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
