@@ -1,85 +1,12 @@
 # Change these first
 owner: iamimmanuelraj # Your GitHub organization or username, where this repository lives
 repo: uptime.immanuelraj.dev # The name of this repository
-user-agent: uptime-immanuelraj-dev # Recommended: use your GitHub username for API requests
 
 sites:
   - name: Portfolio
     url: https://immanuelraj.dev
-    # icon: https://immanuelraj.dev/favicon.ico # Custom icon for this site on the status page
-    # expectedStatusCodes: # HTTP status codes that count as "up" (default: 2xx)
-    #   - 200
-    # maxResponseTime: 3000 # Milliseconds before marked as "degraded" (default: 30000)
-    # slug: portfolio # URL-friendly identifier (default: auto-generated from name)
-    # type: globalping # Use Globalping platform to run checks from around the world
-    # location: World # Location to run the check from. Default: "World"
-    #   # Supports: continents, countries, cities, ASNs, ISPs, cloud regions
-    #   # Combine with +: "amazon+germany", "comcast+california"
-    # check: icmp-ping # Alternative check types: icmp-ping, tcp-ping (default: HTTP)
-    # port: 443 # Required when check: tcp-ping
-    # ipv6: true # Set true to test IPv6 connectivity
   - name: Status Page
     url: https://status.immanuelraj.dev
-    # icon: https://status.immanuelraj.dev/favicon.ico
-    # expectedStatusCodes:
-    #   - 200
-    # maxResponseTime: 3000
-    # slug: status-page
-    # type: globalping # Use Globalping platform to run checks from around the world
-    # location: World # Location to run the check from. Default: "World"
-    # ipv6: true # Set true to test IPv6 connectivity
-
-  # Example: URL from GitHub secret (store as repo secret without the $ prefix)
-  # - name: Private API
-  #   url: $SECRET_PRIVATE_API_URL
-  #   # Or embed a secret inside a URL:
-  #   # url: https://api.example.com/health?key=$MY_API_KEY
-
-  # Example: TCP ping check
-  # - name: DNS Server
-  #   check: tcp-ping
-  #   url: 8.8.8.8
-  #   port: 53
-
-  # Example: Globalping check from a specific region
-  # - name: Portfolio (Singapore)
-  #   url: https://immanuelraj.dev
-  #   type: globalping
-  #   check: icmp-ping
-  #   location: Singapore
-
-delay: 0 # Milliseconds to wait between checking each endpoint (default: 0)
-
-assignees: # GitHub usernames to assign to downtime issues
-  - iamimmanuelraj
-
-skipDeleteIssues: false # If true, won't auto-delete issues for brief downtime (default: false)
-skipDescriptionUpdate: false # If true, won't auto-update repo description (default: false)
-skipTopicsUpdate: false # If true, won't auto-update repo topics (default: false)
-skipHomepageUpdate: false # If true, won't auto-update repo homepage (default: false)
-
-workflowSchedule: # Cron schedule for each workflow
-  uptime: "*/5 * * * *" # Every 5 minute
-  graphs: "0 0 * * *" # Daily at midnight
-  responseTime: "0 23 * * *" # Daily at 11pm
-  summary: "0 0 * * *" # Daily at midnight
-  updateTemplate: "0 0 * * *" # Daily at midnight
-
-commitMessages: # Customize git commit messages
-  # Available variables: $EMOJI, $OWNER, $REPO, $URL, $STATUS, $RESPONSE_TIME, $PREVIOUS_STATUS
-  statusChange: ":$EMOJI: $URL is $STATUS ($RESPONSE_TIME in $RESPONSE_TIME ms) [skip ci] [upptime]"
-  graphsUpdate: ":bento: Update graphs [skip ci]"
-  responseTime: ":pencil: Update response time [skip ci]"
-  staticSite: ":pencil: Update static site [skip ci]"
-  summary: ":card_file_box: Update status summary [skip ci] [upptime]"
-  readmeUpdateMessage: ":pencil: Update summary in README [skip ci] [upptime]"
-
-i18n:
-  lang: en # Language code for the status page (e.g., en, de, fr, es, pt, ja, zh)
-  # Uncomment below to override individual strings
-  # activeIncidents: "Active Incidents"
-  # allSystemsOperational: "All Systems Operational"
-  # degradedPerformance: "Degraded Performance"
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
@@ -90,95 +17,11 @@ status-website:
   name: Up Time Check
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
   introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
-  favicon: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg # URL to favicon image
-  # faviconSvg: https://example.com/favicon.svg # SVG favicon (overrides favicon if set)
-  theme: light # "light" or "dark" (default: light)
-  # themeUrl: https://example.com/custom-theme.css # URL to a custom theme CSS file
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-  links: # Additional footer links
-    - title: Portfolio
-      href: https://immanuelraj.dev
-  metaTags: # Custom HTML meta tags for SEO
-    - name: description
-      content: Uptime monitoring for immanuelraj.dev services
-    - name: keywords
-      content: uptime, status, monitoring
-  # customHeadHtml: | # Raw HTML injected into <head>
-  #   <link rel="preconnect" href="https://fonts.googleapis.com">
-  # customBodyHtml: | # Raw HTML injected at start of <body>
-  #   <div id="custom-banner"></div>
-  # customFootHtml: | # Raw HTML injected at end of <body>
-  #   <script>console.log("custom footer")</script>
-  # css: | # Raw CSS injected into the page
-  #   body { font-family: sans-serif; }
-  # js: | # Raw JS injected into the page
-  #   console.log("custom js")
-  # robotsText: | # Custom robots.txt content
-  #   User-agent: *
-  #   Allow: /
 
-# =============================================================================
-# NOTIFICATIONS — Set these as GitHub repository secrets (not here in YAML)
-# Go to: GitHub repo → Settings → Secrets and variables → Actions → New secret
-# =============================================================================
-#
-# TELEGRAM
-#   NOTIFICATION_TELEGRAM          = true
-#   NOTIFICATION_TELEGRAM_BOT_KEY  = <your bot token from @BotFather>
-#   NOTIFICATION_TELEGRAM_CHAT_ID  = <your chat/group ID>
-#
-# EMAIL (pick one provider below)
-#   NOTIFICATION_EMAIL             = true
-#   NOTIFICATION_EMAIL_FROM        = sender@example.com
-#   NOTIFICATION_EMAIL_TO          = recipient@example.com
-#
-#   SMTP:
-#     NOTIFICATION_EMAIL_SMTP          = true
-#     NOTIFICATION_EMAIL_SMTP_HOST     = smtp.example.com
-#     NOTIFICATION_EMAIL_SMTP_PORT     = 587
-#     NOTIFICATION_EMAIL_SMTP_USERNAME = user
-#     NOTIFICATION_EMAIL_SMTP_PASSWORD = pass
-#
-#   Sendgrid:
-#     NOTIFICATION_EMAIL_SENDGRID         = true
-#     NOTIFICATION_EMAIL_SENDGRID_API_KEY = <api key>
-#
-#   Mailgun:
-#     NOTIFICATION_EMAIL_MAILGUN             = true
-#     NOTIFICATION_EMAIL_MAILGUN_API_KEY     = <api key>
-#     NOTIFICATION_EMAIL_MAILGUN_DOMAIN_NAME = <domain>
-#
-#   AWS SES:
-#     NOTIFICATION_EMAIL_SES                    = true
-#     NOTIFICATION_EMAIL_SES_REGION             = us-east-1
-#     NOTIFICATION_EMAIL_SES_ACCESS_KEY_ID      = <key id>
-#     NOTIFICATION_EMAIL_SES_SECRET_ACCESS_KEY  = <secret>
-#
-# SLACK
-#   NOTIFICATION_SLACK             = true
-#   NOTIFICATION_SLACK_WEBHOOK     = true
-#   NOTIFICATION_SLACK_WEBHOOK_URL = https://hooks.slack.com/...
-#
-# DISCORD
-#   NOTIFICATION_DISCORD             = true
-#   NOTIFICATION_DISCORD_WEBHOOK     = true
-#   NOTIFICATION_DISCORD_WEBHOOK_URL = https://discord.com/api/webhooks/...
-#
-# MICROSOFT TEAMS
-#   NOTIFICATION_TEAMS             = true
-#   NOTIFICATION_TEAMS_WEBHOOK_URL = https://...
-#
-# CUSTOM WEBHOOK
-#   NOTIFICATION_CUSTOM_WEBHOOK     = true
-#   NOTIFICATION_CUSTOM_WEBHOOK_URL = https://your-endpoint.com/hook
-#
-# SMS — Twilio (also supported: Nexmo, Plivo, Infobip, Clickatell, OVH, 46elks)
-#   NOTIFICATION_SMS_FROM              = +1234567890
-#   NOTIFICATION_SMS_TO                = +0987654321
-#   NOTIFICATION_SMS_TWILIO            = true
-#   NOTIFICATION_SMS_TWILIO_ACCOUNT_SID = <SID>
-#   NOTIFICATION_SMS_TWILIO_AUTH_TOKEN  = <token>
+# Upptime also supports notifications, assigning issues, and more
+# See https://upptime.js.org/docs/configuration
