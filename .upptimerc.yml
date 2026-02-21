@@ -33,30 +33,6 @@ sites:
     # port: 443 # Required when check: tcp-ping
     ipv6: true # Set true to test IPv6 connectivity
 
-assignees: # GitHub usernames to assign to downtime issues
-  - iamimmanuelraj
-
-skipDeleteIssues: false # If true, won't auto-delete issues for brief downtime (default: false)
-skipDescriptionUpdate: false # If true, won't auto-update repo description (default: false)
-skipTopicsUpdate: false # If true, won't auto-update repo topics (default: false)
-skipHomepageUpdate: false # If true, won't auto-update repo homepage (default: false)
-
-commitMessages: # Customize git commit messages
-  # Available variables: $EMOJI, $OWNER, $REPO, $URL, $STATUS, $RESPONSE_TIME, $PREVIOUS_STATUS
-  statusChange: ":$EMOJI: $URL is $STATUS ($RESPONSE_TIME in $RESPONSE_TIME ms) [skip ci] [upptime]"
-  graphsUpdate: ":bento: Update graphs [skip ci]"
-  responseTime: ":pencil: Update response time [skip ci]"
-  staticSite: ":pencil: Update static site [skip ci]"
-  summary: ":card_file_box: Update status summary [skip ci] [upptime]"
-  readmeUpdateMessage: ":pencil: Update summary in README [skip ci] [upptime]"
-
-i18n:
-  lang: en # Language code for the status page (e.g., en, de, fr, es, pt, ja, zh)
-  # Uncomment below to override individual strings
-  # activeIncidents: "Active Incidents"
-  # allSystemsOperational: "All Systems Operational"
-  # degradedPerformance: "Degraded Performance"
-
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
