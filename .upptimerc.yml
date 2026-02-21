@@ -59,7 +59,7 @@ skipTopicsUpdate: false # If true, won't auto-update repo topics (default: false
 skipHomepageUpdate: false # If true, won't auto-update repo homepage (default: false)
 
 workflowSchedule: # Cron schedule for each workflow
-  uptime: "0 */5 * * *" # Every 5 minutes (default)
+  uptime: "* * * * *" # Every minute
   graphs: "0 0 * * *" # Daily at midnight
   responseTime: "0 23 * * *" # Daily at 11pm
   summary: "0 0 * * *" # Daily at midnight
