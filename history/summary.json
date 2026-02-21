@@ -2,7 +2,7 @@
   {
     "name": "Portfolio",
     "url": "https://immanuelraj.dev",
-    "icon": "https://immanuelraj.dev/favicon.ico",
+    "icon": "https://icons.duckduckgo.com/ip3/immanuelraj.dev.ico",
     "slug": "portfolio",
     "status": "down",
     "uptime": "99.14%",
@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.97%",
-    "time": 546,
-    "timeDay": 146,
-    "timeWeek": 172,
-    "timeMonth": 160,
-    "timeYear": 504,
+    "time": 596,
+    "timeDay": 0,
+    "timeWeek": 178,
+    "timeMonth": 158,
+    "timeYear": 505,
     "dailyMinutesDown": {
       "2025-11-18": 111,
       "2025-09-10": 23,
@@ -24,7 +24,7 @@
   {
     "name": "Status Page",
     "url": "https://status.immanuelraj.dev",
-    "icon": "https://status.immanuelraj.dev/favicon.ico",
+    "icon": "https://icons.duckduckgo.com/ip3/status.immanuelraj.dev.ico",
     "slug": "status-page",
     "status": "down",
     "uptime": "99.97%",
@@ -33,9 +33,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.97%",
     "time": 218,
-    "timeDay": 209,
-    "timeWeek": 225,
-    "timeMonth": 213,
+    "timeDay": 0,
+    "timeWeek": 230,
+    "timeMonth": 215,
     "timeYear": 218,
     "dailyMinutesDown": {
       "2025-11-18": 119
