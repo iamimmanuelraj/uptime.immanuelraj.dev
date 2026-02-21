@@ -11,6 +11,13 @@ sites:
       - 200
     maxResponseTime: 3000 # Milliseconds before marked as "degraded" (default: 30000)
     slug: portfolio # URL-friendly identifier (default: auto-generated from name)
+    type: globalping # Use Globalping platform to run checks from around the world
+    location: World # Location to run the check from. Default: "World"
+    #   # Supports: continents, countries, cities, ASNs, ISPs, cloud regions
+    #   # Combine with +: "amazon+germany", "comcast+california"
+    # check: icmp-ping # Alternative check types: icmp-ping, tcp-ping (default: HTTP)
+    # port: 443 # Required when check: tcp-ping
+    ipv6: true # Set true to test IPv6 connectivity
   - name: Status Page
     url: https://status.immanuelraj.dev
     icon: https://status.immanuelraj.dev/favicon.ico
@@ -18,6 +25,13 @@ sites:
       - 200
     maxResponseTime: 3000 # Milliseconds before marked as "degraded" (default: 30000)
     slug: portfolio # URL-friendly identifier (default: auto-generated from name)
+    type: globalping # Use Globalping platform to run checks from around the world
+    location: World # Location to run the check from. Default: "World"
+    #   # Supports: continents, countries, cities, ASNs, ISPs, cloud regions
+    #   # Combine with +: "amazon+germany", "comcast+california"
+    # check: icmp-ping # Alternative check types: icmp-ping, tcp-ping (default: HTTP)
+    # port: 443 # Required when check: tcp-ping
+    ipv6: true # Set true to test IPv6 connectivity
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
