@@ -32,7 +32,5 @@ status-website:
     Powered entirely by GitHub Actions — no external servers. Check the [history](https://github.com/$OWNER/$REPO/issues)
     for past incidents and response times.
   navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Website
+      href: https://immanuelraj.dev
