@@ -28,9 +28,9 @@ status-website:
   logoUrl: https://immanuelraj.dev/favicon.ico
   name: Immanuel's Status
   introTitle: "**Immanuel's** service status &amp; uptime monitor."
-  introMessage: Real-time availability tracking for all services at [immanuelraj.dev](https://immanuelraj.dev).
-    Powered entirely by GitHub Actions — no external servers. Check the [history](https://github.com/$OWNER/$REPO/issues)
-    for past incidents and response times.
+  introMessage: "Hi, I'm Immanuel — I care about keeping my services reliable and transparent.
+    This page gives you a live look at the health of everything I run. If something's down,
+    I already know about it and I'm on it. Visit [immanuelraj.dev](https://immanuelraj.dev) to learn more about me."
   navbar:
     - title: Website
       href: https://immanuelraj.dev
