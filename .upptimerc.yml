@@ -19,7 +19,7 @@ sites:
     expectedStatusCodes:
       - 200
     maxResponseTime: 3000
-    slug: portfolio
+    slug: status-page
     type: globalping
     location: World
     ipv6: true
