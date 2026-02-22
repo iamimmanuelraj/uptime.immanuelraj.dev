@@ -23,6 +23,29 @@ sites:
     type: globalping
     location: World
     ipv6: true
+delay: 0
+assignees:
+  - iamimmanuelraj
+skipDeleteIssues: false
+skipDescriptionUpdate: false
+skipTopicsUpdate: false
+skipHomepageUpdate: false
+workflowSchedule:
+  uptime: "*/5 * * * *"
+  graphs: 0 0 * * *
+  responseTime: 0 23 * * *
+  summary: 0 0 * * *
+  updateTemplate: 0 0 * * *
+commitMessages:
+  statusChange: ":$EMOJI: $URL is $STATUS ($RESPONSE_TIME in $RESPONSE_TIME ms)
+    [skip ci] [upptime]"
+  graphsUpdate: ":bento: Update graphs [skip ci]"
+  responseTime: ":pencil: Update response time [skip ci]"
+  staticSite: ":pencil: Update static site [skip ci]"
+  summary: ":card_file_box: Update status summary [skip ci] [upptime]"
+  readmeUpdateMessage: ":pencil: Update summary in README [skip ci] [upptime]"
+i18n:
+  lang: en
 status-website:
   cname: uptime.immanuelraj.dev
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
