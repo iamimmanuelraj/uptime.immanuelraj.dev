@@ -25,7 +25,7 @@ sites:
     ipv6: true
 status-website:
   cname: uptime.immanuelraj.dev
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  logoUrl: https://immanuelraj.dev/favicon.ico
   name: Immanuel's Status
   introTitle: "**Immanuel's** service status &amp; uptime monitor."
   introMessage: Real-time availability tracking for all services at [immanuelraj.dev](https://immanuelraj.dev).
